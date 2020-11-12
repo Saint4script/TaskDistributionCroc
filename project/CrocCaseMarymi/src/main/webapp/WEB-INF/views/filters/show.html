@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All the people came here yes to die</title>
+</head>
+<body>
+
+<p th:text = "'FilterName: ' + ${filter.getName()}">Value</p>
+<p th:text = "'filterID: ' + ${filter.getId()}">Value</p>
+
+<a th:href="@{/filters/{name}(name = ${filter.getName()})}">ti chmonya</a>
+<br/>
+
+
+</body>
+</html>
